@@ -1,75 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
-*{
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  outline: none;
 }
 .main {
-width: 336px;
-max-height: 397px;
-min-height: 236px;
-background-color: rgb(250, 248, 247);
-border: 1px solid rgb(82, 78, 78) ;
-border-radius: 10px;
-overflow: hidden;
-margin: 0 auto;
+  width: 336px;
+  min-height: 397px;
+  min-height: 236px;
+  /* background-color: rgb(250, 248, 247); */
+  border: 1px solid rgb(82, 78, 78);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.mainChildDiv{
-    background-color: rgb(232, 191, 10);
-    width: 100%;
-    height: 28px;
+.h1Div {
+  width: 100%;
+  border-top: 28px solid #ffdc40;
+  display: flex;
+  justify-content: center;
 }
-.h1Div{
-    width: 100%;
-    margin-left: 95px;
-}
-.h1Name{
-color: black;
-font-size: 30px;
-font-family: 'Roboto Slab', sans-serif;
+.h1Name {
+  color: black;
+  font-size: 30px;
+  font-family: "Roboto Slab", sans-serif;
 }
 
-.searchDIV{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+.arrowDiv {
+  width: 80%;
+  text-align: end;
+  margin: 10px 0;
 }
-input{
-    width: 270px;
-    height: 35px;
-    border-radius: 3px;
-    border: 1px solid #e6e3eb;
-    margin-left: 30px;
+
+.arrowDiv svg{
+cursor: pointer;
+}
+
+.arrowDiv svg:hover rect,
+.arrowDiv svg:hover path{
+  fill: black;
+  }
+.searchDIV {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+form{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #cccccc;
+  padding:4px 10px;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+.input{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input span{
+  cursor: pointer;
+}
+
+.input span:hover svg rect {
+  fill: #aa68fe;
+}
+
+.input span:hover svg path {
+  stroke: #ffffff;
+}
+
+input {
+  width: 220px;
+  height: 35px;
+  border-radius: 3px;
+  border: none;
 }
 
 button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    margin-left: 80px;
-    margin-top: 20px;
-  }
-  .btn {
-    width: 150px;
-    height: 42px;
-    background-color: #9953F1;
-    border-radius: 71px;
-    display: flex;
-  }
-  .btn-plus {
-    width: 42px;
-    height: 42px;
-    background-color: #AA68FE;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-  }
-  
-  .btn-content {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    margin-left: -21px;
-    color: #fff;
-  }
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.btn {
+  width: 150px;
+  height: 42px;
+  background-color: #9953f1;
+  border-radius: 71px;
+  display: flex;
+}
+.btn-plus {
+  width: 42px;
+  height: 42px;
+  background-color: #aa68fe;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.btn-content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-left: -21px;
+  color: #fff;
+}
